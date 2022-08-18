@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} %p %m%n</Property>
+        <Property name="APP_LOG_ROOT">./logs</Property>
+    </Properties>
+
+    <Appenders>
+
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <RollingFile name="AppFile" fileName="${sys:APP_LOG_ROOT}/app.log"
+                     filePattern="${sys:APP_LOG_ROOT}/app-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <RollingFile name="LemmaFile" fileName="${sys:APP_LOG_ROOT}/lemma.log"
+                     filePattern="${sys:APP_LOG_ROOT}/app-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <RollingFile name="DbFile" fileName="${sys:APP_LOG_ROOT}/db.log"
+                     filePattern="${sys:APP_LOG_ROOT}/db-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+
+    </Appenders>
+
+    <Loggers>
+
+        <logger name = "AppFile" level = "info" >
+            <appender-ref ref="AppFile" level="info"/>
+        </logger>
+        <logger name = "LemmaFile" level = "info" >
+            <appender-ref ref="LemmaFile" level="info"/>
+        </logger>
+        <logger name = "DbFile">
+            <appender-ref ref="DbFile" level="info"/>
+        </logger>
+        <logger name = "Console" level = "info" >
+            <appender-ref ref="Console" level="info"/>
+        </logger>
+
+        <Root level="debug">
+            <AppenderRef ref="Console" level="debug"/>
+        </Root>
+
+    </Loggers>
+
+</Configuration>

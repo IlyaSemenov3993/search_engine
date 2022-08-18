@@ -3,7 +3,7 @@
 <div align="center">
     <img src="https://img.shields.io/badge/Java-black?style=for-the-badge&logo=Java" alt="Java"/>
     <img src="https://img.shields.io/badge/Spring-black?style=for-the-badge&logo=Spring" alt="Spring"/>
-    <img src="https://img.shields.io/badge/Mysql-black?style=for-the-badge&logo=Mysql" alt="MySQL"/>
+    <img src="https://img.shields.io/badge/Mysql-black?style=for-the-badge&logo=Mysql" alt="Postrgesql"/>
 </div>
 <h3></h3>
 <h1>Description</h1>

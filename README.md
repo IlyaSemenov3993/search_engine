@@ -81,11 +81,6 @@ and when you click on the "Find" button, the search results are displayed.
 In case of exceptions, API methods return correct responses.
 <div><img src="https://github.com/coollappsus/SearchEngine/blob/main/assets/EmptyQuery.png?raw=true"></div>
 <div><img src="https://github.com/coollappsus/SearchEngine/blob/main/assets/ErrorUrl.png?raw=true"></div>
-<h3>Database</h3>
-The application works with a MySQL database, connection parameters are set in the config.
-The database structure looks like this.
-<div><img src="https://github.com/coollappsus/SearchEngine/blob/main/assets/Database.png?raw=true"></div>
-<!--Написать про рассчёт ранка и релевантности.-->
 
 <h1>Code Examples</h1>
 This type of request/response when loading the start page(Dashboard)
@@ -109,5 +104,5 @@ This type of request/response when loading the start page(Dashboard)
 </ul>
 
 <h1>Contact</h1>
-Created by <a href="https://t.me/ilyusha2099"> Ilia Semenov</a>
+Created by <a href="https://t.me/ilyusha2099"> Ilya Semyonov</a>
 <h3></h3>

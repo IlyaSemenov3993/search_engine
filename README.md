@@ -1,34 +1,34 @@
 <h1 align="center">Search Engine</h1>
 
-<div align="center">
-    <img src="https://img.shields.io/badge/Java-black?style=for-the-badge&logo=Java" alt="Java"/>
-    <img src="https://img.shields.io/badge/Spring-black?style=for-the-badge&logo=Spring" alt="Spring"/>
-    <img src="https://img.shields.io/badge/Mysql-black?style=for-the-badge&logo=Mysql" alt="Postrgesql"/>
-</div>
-<h3></h3>
-<h1>Description</h1>
-This project was created for a deep study of the Spring framework and multithreading. And also in order to study the deploy on Yandex cloud.
-
 <h1>General info</h1>
 The application was created according to the classic MVC structure.
+
+<h1>Technologies</h1>
+<ul>
+    <li>Core - Java 11, Spring Boot 2</li>
+    <li>Data - PostgreSQL, Liquibase, JDBC, JPA</li>
+    <li>View - Javascript, HTML, CSS</li>
+    <li>Test - Junit 4, Mockito</li>
+
+</ul>
+
 <h4></h4>
 <div><img src="https://github.com/coollappsus/SearchEngine/blob/877dd954d603839d3f5f5e67b2c24e080498f22b/assets/UntitledDiagram.drawio.png"></div>
 <div>
-    For the application to work correct, you need a MySQL database, and also register the data in the config
-    file(application.yaml):
+    For the application to work correct, you need a Postgres database, and also register the data in the config
+    file(application.properties, sites.properties ):
     <ul>
         <li>The path to the database</li>
         <li>Database user data (username, password)</li>
-        <li>Sites that need to be indexed (main URL, custom site name)</li>
+        <li>Sites that need to be indexed (main URL, some site name)</li>
     </ul>
 </div>
 
 <h1>About the project</h1>
-I was given a ready-made frontend, my task was to write a backend, and then make friends with them. The functionality
-of the program can be divided into three parts:
+I was given a ready-made frontend, my task was to write a backend. The functionality of the program can be divided into three parts:
 <ul>
     <li>View general statistics about all sites and about each site individually</li>
-    <li>Start or stop full indexing, indexing of a single page in the sites that are in the config file</li>
+    <li>Start or stop full indexing, indexing of a new site , indexing of a single page in the sites that are in the config file</li>
     <li>Search by search query on all sites or on a selected site</li>
 </ul>
 <h3>Dashboard</h3>
@@ -87,23 +87,14 @@ The database structure looks like this.
 <div><img src="https://github.com/coollappsus/SearchEngine/blob/main/assets/Database.png?raw=true"></div>
 <!--Написать про рассчёт ранка и релевантности.-->
 
-<h1>Technologies</h1>
-<ul>
-    <li>Java - version 17</li>
-    <li>Spring boot - version 2.6.7</li>
-    <li>MySQL - version 8.0.26</li>
-</ul>
 <h1>Code Examples</h1>
 This type of request/response when loading the start page(Dashboard)
 <h3>Request</h3>
 <div><img src="https://github.com/coollappsus/SearchEngine/blob/main/assets/Request.png?raw=true" width="400"></div>
 <h3>Response</h3>
 <div><img src="https://github.com/coollappsus/SearchEngine/blob/main/assets/Response.png?raw=true" width="400"></div>
-<h1>Status</h1>
-Project is: finished 😉
 
 <h1>Inspiration</h1>
-The project was created for educational purposes.
 
 <h1>Future scope</h1>
 <ul>
@@ -113,23 +104,10 @@ The project was created for educational purposes.
         Corrected request: REQUEST".
     </li>
     <li>
-        Implement the output of the list of erroneous pages on a separate page.
-    </li>
-    <li>
-        Implement the possibility of separate reindexing of individual sites.
-    </li>
-    <li>
-        To calculate a more accurate relevance value, select the h1 header in a separate field
-        on HTML pages with a weight of 0.9 and ignore its contents in the body.
-    </li>
-    <li>
         Authorization in the web interface.
     </li>
 </ul>
 
 <h1>Contact</h1>
-Created by <a href="https://t.me/coollappsus"> Ryzhikov Ivan</a> - feel free to contact me!
+Created by <a href="https://t.me/ilyusha2099"> Ilia Semenov</a>
 <h3></h3>
-
-<div><b>+7 (952) 353-19-01</b> | <a href="mailto:ntdr.94@yandex.ru"> Send me mail</a>  |
-    <a href="https://github.com/coollappsus"> github</a></div>
